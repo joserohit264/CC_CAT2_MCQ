@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAT 2 DSA MCQ Quiz Platform | Competitive Coding</title>
+  <meta name="description" content="Interactive 130 MCQ practice platform for VIT Competitive Coding CAT 2 covering Stacks and Linked Lists with instant answer feedback and explanations.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="brand">
+      <span class="brand-icon">⚡</span>
+      <span>CAT 2 DSA MCQ Portal</span>
+    </div>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle">☀️ Light Mode</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- Dashboard Stats Grid -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Score</span>
+        <span id="statScore" class="stat-value highlight">0 / 0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Accuracy</span>
+        <span id="statAccuracy" class="stat-value">0%</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Attempted</span>
+        <span id="statAttempted" class="stat-value">0 / 130</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Streak</span>
+        <span id="statStreak" class="stat-value">🔥 0</span>
+      </div>
+    </section>
+
+    <!-- Controls Bar -->
+    <section class="controls-bar">
+      <select id="topicSelect" class="topic-select">
+        <option value="all">📚 All Topics (130 MCQs)</option>
+        <option value="bookmarked">⭐ Bookmarked Questions</option>
+      </select>
+
+      <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search question or keyword...">
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <!-- Quiz Card -->
+    <article class="quiz-card">
+      <div class="card-header">
+        <span id="topicBadge" class="topic-badge">Topic</span>
+        <span id="questionCounter" class="question-counter">Question 1 of 130</span>
+      </div>
+
+      <h2 id="questionText" class="question-text">Loading question...</h2>
+
+      <!-- Options Grid -->
+      <div id="optionsGrid" class="options-grid"></div>
+
+      <!-- Explanation Box -->
+      <div id="explanationBox" class="explanation-box">
+        <div class="explanation-title">💡 Detailed Explanation</div>
+        <div id="explanationText" class="explanation-body"></div>
+      </div>
+
+      <!-- Navigation Actions -->
+      <div class="card-actions">
+        <button id="btnPrev" class="btn-secondary">← Previous</button>
+        <button id="btnBookmark" class="btn-secondary">☆ Bookmark</button>
+        <button id="btnNext" class="btn-primary">Next Question →</button>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>VIT Competitive Coding CAT 2 • Stacks & Linked Lists Practice Portal • GitHub Pages Ready</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
